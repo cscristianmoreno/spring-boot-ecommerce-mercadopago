@@ -1,0 +1,22 @@
+server:
+    port: 8080
+
+spring:
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+    datasource:
+        url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/e-commerce
+        username: root
+        password: 
+        driver-class-name: com.mysql.cj.jdbc.Driver
+
+jwt:
+    token:
+        secret-key: Wr3JTxyI4MqNRJbvTq01wc0iOSKkr/GYJlE/eMbrFsvF5dt41ywGlxOz0mMt6UpK
+        expire: 3600
+
+mp:
+    public-key: 
+    secret-key: 
